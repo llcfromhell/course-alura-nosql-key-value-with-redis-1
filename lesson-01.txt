@@ -1,0 +1,11 @@
+# write something on the console
+ECHO "hello world"
+
+# create a key with given value
+SET "total_of_courses" 105
+
+# retrieve value for given key
+GET "total_of_courses"
+
+# remove given keys (return number of keys removed)
+DEL "total_of_courses"

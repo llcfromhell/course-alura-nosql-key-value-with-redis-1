@@ -1,0 +1,5 @@
+# create a container running redis-server with persistent data
+docker run --name some-redis -d -v $(pwd) redis redis-server --appendonly yes
+
+# connect to the container running redis-sever
+docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
