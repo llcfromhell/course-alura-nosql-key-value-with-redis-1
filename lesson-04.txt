@@ -1,0 +1,5 @@
+# find results for days ending in 3 or 7
+KEYS "resultado:?[37]-??-????:megasena"
+
+# find results for days starting with 1 and ending with 5 or 7
+KEYS resultado:1[57]-??-????:*sena
