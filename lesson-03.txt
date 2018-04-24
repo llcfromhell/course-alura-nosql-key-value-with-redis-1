@@ -1,0 +1,17 @@
+# set multiple keys
+MSET resultado:03-05-2015:megasena "1, 3, 17, 19, 24, 26" resultado:22-04-2015:megasena "15, 18, 20, 32, 37, 41" resultado:15-04-2015:megasena "10, 15, 18, 22, 35, 43"
+
+# find all keys starting with 'resultado''
+KEYS "resultado*"
+
+# find results for month 05 only
+KEYS "resultado:*-05-2015:megasena"
+
+# find results for days 10 to 19
+KEYS "resultado:1*-05-2015:megasena"
+
+# limit search for only 1 digit after the first one representing the days - work as the same of the prior example, but restricit and avoid having something like 123-05-2015
+KEYS "resultado:1?-05-2015:megasena"
+
+# this example shows how the difference between the 2 before, when only 1 char is not enough for the '?'
+KEYS "resultado:?-05-2015:megasena"
