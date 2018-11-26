@@ -1,0 +1,20 @@
+# create hash 'resultado:24-05-2015:megasena' with key 'numeros' and value
+HSET resultado:24-05-2015:megasena "numeros" "13, 17, 19, 25, 28, 32"
+
+# create key 'ganhadores' and value under the hash 'resultado:24-05-2015:megasena'
+HSET resultado:24-05-2015:megasena "ganhadores" 23
+
+# retrieve key 'numeros' from hash 'resultado:24-05-2015:megasena'
+HGET resultado:24-05-2015:megasena "numeros"
+
+# retrieve key 'ganhadores' from hash 'resultado:24-05-2015:megasena'
+HGET resultado:24-05-2015:megasena "ganhadores"
+
+# remove key 'numeros' from hash 'numeros'
+HDEL resultado:24-05-2015:megasena "numeros"
+
+# set multiple keys for set
+HMSET resultado:05-06-2015:megasena "numeros" "5, 19, 23, 28, 46, 49" "ganhadores" "16"
+
+# get ALL keys from set
+HGETALL "resultado:05-06-2015:megasena"
