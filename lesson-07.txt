@@ -1,0 +1,14 @@
+# auto increment value of key
+INCR pagina:/contato:25-05-2015
+
+# decrement value of key
+DECR pagina:/contato:25-05-2015
+
+# increment by specific value
+INCRBY compras:25-05-2015:valor 15
+
+# decrement by specific value
+DECRBY compras:25-05-2015:valor 2
+
+# increment by float
+INCRBYFLOAT compras:25-05-2015:valor 10.50
