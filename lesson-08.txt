@@ -8,22 +8,21 @@ SETBIT acesso:27-05-2015 2 1
 SETBIT acesso:27-05-2015 3 1
 
 # get the bit result of a give map key
-GETBIT acesso:25-05-2015 15 
-GETBIT acesso:25-05-2015 30
+GETBIT acesso:25-05-2015 1 
 
 # return the number of bits from a given map key
-BITCOUNT acesso:25-06-2015
-BITCOUNT acesso:26-06-2015
-BITCOUNT acesso:27-06-2015
+BITCOUNT acesso:25-05-2015
+BITCOUNT acesso:26-05-2015
+BITCOUNT acesso:27-05-2015
 
 # set the result of an AND clause for the given keys into a new one
-BITOP AND acesso:25-e-26-06-2015 acesso:25-06-2015 acesso:26-06-2015
+BITOP AND acesso:25-e-26-05-2015 acesso:25-05-2015 acesso:26-05-2015
 
 # get the result of a BITOP generated key
-GETBIT acesso:25-e-26-0602015 1
+GETBIT acesso:25-e-26-05-2015 1
 
 # set the result of and OR clause for the given keys into a new one
-BITOP OR acesso:25-ou-26-06-2015 acesso:25-06-2015 acesso:26-06-2015
+BITOP OR acesso:25-ou-26-05-2015 acesso:25-05-2015 acesso:26-05-2015
 
 # count the results of bits from a BITOP OR generated keys
-BITCOUNT acesso:25-ou-26-06-2015
+BITCOUNT acesso:25-ou-26-05-2015
